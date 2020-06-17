@@ -1,0 +1,25 @@
+{
+  "name": "get-popcorn",
+  "version": "1.0.0",
+  "description": "Desktop web application for exploring movies",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss dist/css/style.css -w",
+    "compile:js": "webpack --mode development",
+    "build:js": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
+  },
+  "author": "Sarthak Duggal",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "uniqid": "^5.2.0"
+  }
+}
