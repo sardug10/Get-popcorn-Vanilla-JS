@@ -33,7 +33,7 @@ Click on the little **HEART ICON** and you can like your favorite movies, TV sho
 
 ##### Note:- These UI elements so created are also Links and works just as other links i.e, you can get the details for the same by just clicking on it.
 
-### Contribution
+### How to contribute?
 You can contribute to this project in number of ways, it's upto your imagination. Also, if you want some suggestions about what you can do to contribute, I have listed you 2 issues that you can fix:-
 
 1. **Not enough space for the details**
