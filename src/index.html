@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Popcorn</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="resources/flickity.css" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="resources/flickity.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">get Popcorn</span>
+      <form class="search">
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Search for movies...."
+          required
+        />
+        <button class="search__btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+    </header>
+    <main>
+      <section class="view">
+        <div class="composition">
+          <!-- COMPOSITION CONTENT FOR MOVIES-->
+
+          <h1 class="composition__heading">
+            Let's explore movies together....
+          </h1>
+          <!--<img
+            src="img/posters/2.jpg"
+            alt="Poster"
+            class="composition__poster"
+          />
+          <div class="composition__content">
+            <h2 class="composition__title">Inception</h2>
+            <span class="composition__release-date">2010</span>
+            <i
+              class="fa fa-heart-o composition__like-icon"
+              aria-hidden="true"
+            ></i>
+            <h3 class="composition__tagline">
+              Your mind is the scene of the crime.
+            </h3>
+            <p class="composition__overview">
+              Cobb, a skilled thief who commits corporate espionage by
+              infiltrating the subconscious of his targets is offered a chance
+              to regain his old life as payment for a task considered to be
+            </p>
+            <span class="composition__genre"
+              >"action" , "science fiction" , "adventure"</span
+            >
+            <span class="composition__popularity">71% user votes</span>
+          </div>-->
+
+          <!-- COMPOSITION CONTENT FOR TV SHOWS-->
+
+          <!--
+
+          <img
+            src="img/posters/6.jpg"
+            alt="Poster"
+            class="composition__poster"
+          />
+
+          <div class="composition__content">
+            <h2 class="composition__title">13 reasons why</h2>
+            <span class="composition__release-date">21.3.2017</span>
+            <i
+              class="fa fa-heart-o composition__like-icon"
+              aria-hidden="true"
+            ></i>
+
+            <h3 class="composition__seasons">
+              No of seasons:- 4
+            </h3>
+
+            <p class="composition__overview">
+              After a teenage girl's perplexing suicide, a classmate receives a
+              series of tapes that unravel the mystery of her tragic choice.
+            </p>
+
+            <span class="composition__genre">"drama" , "mystery"</span>
+            <span class="composition__popularity">75% user votes</span>
+          </div>-->
+
+          <!-- COMPOSITION CONTENT FOR ACTORS
+          src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oSGVmWhn4WT4TI4PCiQrpym6LfW.jpg"
+
+          <img
+            src="img/posters/12.jpg"
+            alt="chris hemsworth"
+            class="composition__poster"
+          />
+
+          <div class="composition__content">
+            <h2 class="composition__name">Chris hemsworth</h2>
+            <span class="composition__dob">11.8.1983</span>
+            <i
+              class="fa fa-heart-o composition__like-icon"
+              aria-hidden="true"
+            ></i>
+
+            <h3 class="composition__bio">
+              Biography
+            </h3>
+
+            <p class="composition__overview">
+              Chris Hemsworth (born 11 August 1983) is an Australian actor. He
+              is best known for his roles as Kim Hyde in the Australian TV
+              series Home and Away (2004) and as Thor in the Marvel Cinematic
+              Universe films Thor (2011), The Avengers (2012), Thor: The Dark
+              World (2013) and Avengers: Age of Ultron (2015). He has also
+              appeared in the science fiction action film Star Trek(2009), the
+              thriller adventure A Perfect Getaway (2009), the horror comedy The
+              Cabin in the Woods (2012), the dark fantasy action film Snow White
+              and the Huntsman (2012), the war film Red Dawn (2012) and the
+              biographical sports drama film Rush (2013).
+            </p>
+          </div>-->
+        </div>
+        <div class="slideshow">
+          <div class="navbar category">
+            <ul class="navbar__list">
+              <li
+                class="navbar__item navbar__item--active category-movie"
+                id="23456"
+              >
+                <a href="#" class="navbar__link">
+                  home
+                  <i class="fa fa-home navbar__icon" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="navbar__item category-tv">
+                <a href="#" class="navbar__link">
+                  TV shows
+                  <i
+                    class="fa fa-television navbar__icon"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+              <li class="navbar__item category-actor">
+                <a href="#" class="navbar__link">
+                  Actors
+                  <i class="fa fa-male navbar__icon" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-carousel">
+            <!--<div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#54656" class="poster-link">
+                <img
+                  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/eifGNCSDuxJeS1loAXil5bIGgvC.jpg"
+                  alt=""
+                  class="carousel__poster"
+                />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#25624" class="poster-link">
+                <img src="img/posters/2.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#544342" class="poster-link">
+                <img src="img/posters/3.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#6543312" class="poster-link">
+                <img src="img/posters/4.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#54535" class="poster-link">
+                <img src="img/posters/5.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#5215" class="poster-link">
+                <img src="img/posters/6.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#4515" class="poster-link">
+                <img src="img/posters/7.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#222152" class="poster-link">
+                <img src="img/posters/8.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#87316" class="poster-link">
+                <img src="img/posters/9.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>
+            <div class="carousel-cell">
+              <h4 class="carousel__title">Justice League</h4>
+              <a href="#441994" class="poster-link">
+                <img src="img/posters/10.jpg" alt="" class="carousel__poster" />
+              </a>
+            </div>-->
+          </div>
+          <!--<span class="composition__warning">oops!! no results found, try looking in another category</span>-->
+        </div>
+      </section>
+
+      <section class="like">
+        <div class="like__category">
+          <h2 class="like__heading">Liked Movies</h2>
+          <div class="like__container">
+            <ul class="like__list liked__movies">
+              <!--<li class="like__item">
+                <a href="#" class="like__link">
+                  <img
+                    src="img/posters/default-movie-poster.jpg"
+                    alt="poster"
+                    class="like__img"
+                  />
+                  <div class="like__content">
+                    <span class="like__title">movie1</span>
+                    <span class="like__about"
+                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Earum quod distinctio ipsa quam doloremque ducimus ex
+                      voluptatibus, corporis minima cumque.</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <li class="like__item">
+                <a href="#" class="like__link">
+                  <img
+                    src="img/posters/default-movie-poster.jpg"
+                    alt="poster"
+                    class="like__img"
+                  />
+                  <div class="like__content">
+                    <span class="like__title">movie1</span>
+                    <span class="like__about"
+                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Earum quod distinctio ipsa quam doloremque ducimus ex
+                      voluptatibus, corporis minima cumque.</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <li class="like__item">
+                <a href="#" class="like__link">
+                  <img
+                    src="img/posters/default-movie-poster.jpg"
+                    alt="poster"
+                    class="like__img"
+                  />
+                  <div class="like__content">
+                    <span class="like__title">movie1</span>
+                    <span class="like__about"
+                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Earum quod distinctio ipsa quam doloremque ducimus ex
+                      voluptatibus, corporis minima cumque.</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <li class="like__item">
+                <a href="#" class="like__link">
+                  <img
+                    src="img/posters/default-movie-poster.jpg"
+                    alt="poster"
+                    class="like__img"
+                  />
+                  <div class="like__content">
+                    <span class="like__title">movie1</span>
+                    <span class="like__about"
+                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Earum quod distinctio ipsa quam doloremque ducimus ex
+                      voluptatibus, corporis minima cumque.</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <li class="like__item">
+                <a href="#" class="like__link">
+                  <img
+                    src="img/posters/default-movie-poster.jpg"
+                    alt="poster"
+                    class="like__img"
+                  />
+                  <div class="like__content">
+                    <span class="like__title">movie1</span>
+                    <span class="like__about"
+                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Earum quod distinctio ipsa quam doloremque ducimus ex
+                      voluptatibus, corporis minima cumque.</span
+                    >
+                  </div>
+                </a>
+              </li>-->
+            </ul>
+          </div>
+        </div>
+        <div class="like__category">
+          <div class="like__category">
+            <h2 class="like__heading">Liked TV shows</h2>
+            <div class="like__container">
+              <ul class="like__list liked__tv"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="like__category">
+          <div class="like__category">
+            <h2 class="like__heading">Liked Persons</h2>
+            <div class="like__container">
+              <ul class="like__list liked__person"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <span class="navbar__copyright">
+        get popcorn. &copy; <br />made by sarthak duggal
+      </span>
+    </footer>
+  </body>
+</html>
