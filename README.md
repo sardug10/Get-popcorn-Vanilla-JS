@@ -1,6 +1,6 @@
 ### Get Popcorn
 
-This is a Web-Application I build as my personal project. It shows stuff like Trending movies, TV shows and actors. There is a lot of stuff that you can do. If you want to try click [here](https://sardug10.github.io/Get-popcorn-V1.0/).
+This is a Web-Application I build as my personal project. It shows stuff like Trending movies, TV shows and actors. There is a lot of stuff that you can do. If you want to try click [here](https://sardug10.github.io/Get-popcorn-Vanilla-JS/).
 If you want to contribute or learn more then keep reading.
 
 #### Trending Section
